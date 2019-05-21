@@ -103,13 +103,21 @@
 
 
 
-with open('alice.txt', 'r') as file:
-    novel = file.read().replace('\n', '')
-    words = novel.split(' ')
-    # print(words)
-    count=0
-    for name in words:
-        if name=="Alice":
-            count=count+1
-    print(count)
+# with open('alice.txt', 'r') as file:
+#     novel = file.read().replace('\n', '')
+#     words = novel.split(' ')
+#     # print(words)
+#     count=0
+#     for name in words:
+#         if name=="Alice":
+#             count=count+1
+#     print(count)
+
+star =[]
+n=0
+
+while n<=5:
+    star.append("*")
+    print(' '.join(star))
+    n=n+1
 
